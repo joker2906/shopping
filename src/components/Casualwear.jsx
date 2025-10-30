@@ -8,7 +8,7 @@ import { useCart } from './CartContext';
 export default function Casualwear() {
   const navigate = useNavigate();
   const { addToCart, addToWishlist,cart, wishlist } = useCart();
-  
+
   const handleAddToCart = () => {
       const size = document.getElementById('size').value;
       if (!size) {
@@ -18,7 +18,7 @@ export default function Casualwear() {
       const quantity = 1;
       addToCart({ name: 'Mast & Harbour Men Cotton Striped Casual Shirt', price: '₹299.99', size, image: casual }, quantity);
     };
-  
+
     const handleAddToWishlist = () => {
       const size = document.getElementById('size').value;
       if (!size) {

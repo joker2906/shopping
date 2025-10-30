@@ -1,44 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
 .order-history-container {
+  padding: 40px;
   max-width: 1400px;
-  margin: 0 auto;
-  padding: 3rem;
-  font-family: 'Inter', sans-serif;
+  margin: 100px auto;
   background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-  color: #e8e8e8;
-  min-height: 100vh;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease-in-out;
 }
 
-.order-history-header {
-  text-align: center;
-  margin-bottom: 4rem;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .order-history-header h1 {
+  margin-bottom: 30px;
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  font-weight: 700;
   color: #ffd700;
-  margin-bottom: 1rem;
   text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .empty-orders {
   text-align: center;
-  padding: 5rem 3rem;
+  padding: 50px 20px;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 215, 0, 0.1);
-  border-radius: 30px;
-  margin: 2rem 0;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .empty-orders p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: rgba(232, 232, 232, 0.9);
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
   font-weight: 300;
 }
 
@@ -47,8 +45,8 @@
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 20px;
-  padding: 3rem;
-  margin-bottom: 2rem;
+  padding: 30px;
+  margin-bottom: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -82,8 +80,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 2px solid rgba(255, 215, 0, 0.2);
 }
 
@@ -110,8 +108,8 @@
   background: rgba(255, 215, 0, 0.1);
   border: 1px solid rgba(255, 215, 0, 0.3);
   border-radius: 15px;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
@@ -121,12 +119,12 @@
 }
 
 .order-items {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 
 .order-items h4 {
   color: #ffd700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
   font-size: 1.3rem;
   font-weight: 600;
   text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
@@ -139,8 +137,8 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 215, 0, 0.1);
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
+  padding: 15px;
+  margin-bottom: 10px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -155,7 +153,7 @@
   height: 100px;
   object-fit: cover;
   border-radius: 12px;
-  margin-right: 1.5rem;
+  margin-right: 15px;
   transition: transform 0.3s ease;
 }
 
@@ -164,7 +162,7 @@
 }
 
 .order-item-details h5 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 5px 0;
   color: #e8e8e8;
   font-size: 1.1rem;
   font-weight: 600;
@@ -181,12 +179,12 @@
   background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   color: white;
   border: none;
-  padding: 1rem 2rem;
+  padding: 15px 30px;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 20px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
@@ -198,27 +196,29 @@
 
 @media (max-width: 1024px) {
   .order-history-container {
-    padding: 2.5rem 1.5rem;
+    padding: 30px;
+    margin: 80px auto;
   }
 
   .order-history-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .order-card {
-    padding: 2.5rem;
+    padding: 25px;
   }
 }
 
 @media (max-width: 768px) {
   .order-history-container {
-    padding: 2rem 1rem;
+    padding: 20px;
+    margin: 60px auto;
   }
 
   .order-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 10px;
   }
 
   .order-item {
@@ -228,21 +228,22 @@
 
   .order-item-image {
     margin-right: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
 
   .order-history-header h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .order-card {
-    padding: 2rem;
+    padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .order-history-container {
-    padding: 1.5rem 0.5rem;
+    padding: 15px;
+    margin: 40px auto;
   }
 
   .order-history-header h1 {
@@ -250,11 +251,11 @@
   }
 
   .order-card {
-    padding: 1.5rem;
+    padding: 15px;
   }
 
   .order-header {
-    padding-bottom: 1.5rem;
+    padding-bottom: 15px;
   }
 
   .order-id {
@@ -262,12 +263,12 @@
   }
 
   .order-total {
-    padding: 1.5rem;
+    padding: 15px;
     font-size: 1.3rem;
   }
 
   .order-item {
-    padding: 1rem;
+    padding: 10px;
   }
 
   .order-item-image {
@@ -276,7 +277,7 @@
   }
 
   .back-home-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 12px 25px;
+    font-size: 1rem;
   }
 }

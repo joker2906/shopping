@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import jeans from './jeans.jpg';
 import logo from './logo.jpg';
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
-import './Home.css';
 import { useCart } from './CartContext';
 
 export default function Jeans() {
@@ -29,9 +28,18 @@ export default function Jeans() {
     addToWishlist({ name: 'Mast & Harbour Men Slim Fit Jeans', price: '₹949.99', size, image: jeans });
   };
   return (
-    <div className="app-container">
-      <div className="content-wrapper">
-      <header className="header" >
+    <div>
+      <header
+        className="header"
+        style={{
+          position: 'sticky',top: 0,width: '100vw',
+          display: 'flex', alignItems: 'center',
+          justifyContent: 'space-between',background: 'rgba(255, 255, 255, 0.08)',
+          backdropFilter: 'blur(20px)', borderBottom: '1px solid rgba(255, 215, 0, 0.2)',
+          padding: '1.2rem 3rem',zIndex: 1000,
+          boxSizing: 'border-box',transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+        }}
+      >
         <div className="logo-container">
           <img src={logo} alt="Logo" className="logo"  style={{leftMargin:'20px', color:'white', textDecoration:'none'}}/>
           <a href="/home" class="back-btn" style={{borderRadius: '5px',leftMargin:'20px',height:'30px',
@@ -97,7 +105,6 @@ export default function Jeans() {
           </div>
         </section>
       </main>
-      </div>
     </div>
   );
 }

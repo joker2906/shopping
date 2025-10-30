@@ -25,6 +25,10 @@ import Childboywear from "./components/Childboywear.jsx";
 import Checkout from "./components/Checkout.jsx";
 import Payment from "./components/Payment.jsx";
 import OrderHistory from "./components/OrderHistory.jsx";
+import Sunscreen from "./components/Sunscreen.jsx";
+import Lipbalm from "./components/Lipbalm.jsx";
+import Perfume from "./components/Perfume.jsx";
+import Shampoo from "./components/Shampoo.jsx";
 import { CartProvider } from "./components/CartContext.js";
 
 
@@ -59,6 +63,10 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/orders" element={<OrderHistory />} />
+            <Route path="/sunscreen" element={<Sunscreen />} />
+            <Route path="/lipbalm" element={<Lipbalm />} />
+            <Route path="/perfume" element={<Perfume />} />
+            <Route path="/shampoo" element={<Shampoo />} />
           </Routes>
         </div>
       </Router>

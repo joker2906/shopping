@@ -2,7 +2,7 @@
   padding: 40px;
   max-width: 1400px;
   margin: 100px auto;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   animation: fadeIn 0.8s ease-in-out;
@@ -198,4 +198,138 @@
 .checkout-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cart-container {
+    padding: 30px;
+    margin: 80px auto;
+  }
+
+  .cart-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .cart-item {
+    padding: 15px;
+  }
+
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .cart-item-name {
+    font-size: 1.3rem;
+  }
+
+  .cart-summary {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 20px;
+    margin: 60px auto;
+  }
+
+  .cart-header h1 {
+    font-size: 2rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .cart-item-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .cart-item-details {
+    text-align: center;
+  }
+
+  .quantity-controls {
+    justify-content: center;
+  }
+
+  .cart-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cart-summary {
+    padding: 20px;
+  }
+
+  .cart-total {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 15px;
+    margin: 40px auto;
+  }
+
+  .cart-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .empty-cart p {
+    font-size: 1.2rem;
+  }
+
+  .back-home-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .cart-item {
+    padding: 12px;
+  }
+
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cart-item-name {
+    font-size: 1.2rem;
+  }
+
+  .cart-item-price {
+    font-size: 1.1rem;
+  }
+
+  .quantity-btn {
+    padding: 6px 10px;
+  }
+
+  .remove-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .cart-summary {
+    padding: 15px;
+  }
+
+  .cart-total {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .clear-cart-btn,
+  .checkout-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
 }

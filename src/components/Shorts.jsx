@@ -27,6 +27,7 @@ export default function Shorts() {
     }
     addToWishlist({ name: 'Mast & Harbour Men Cotton Shorts', price: '₹199.99', size, image: shorts });
   };
+
   return (
     <div>
       <header
