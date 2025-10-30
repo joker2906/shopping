@@ -29,6 +29,10 @@ import Sunscreen from "./components/Sunscreen.jsx";
 import Lipbalm from "./components/Lipbalm.jsx";
 import Perfume from "./components/Perfume.jsx";
 import Shampoo from "./components/Shampoo.jsx";
+import Formalshoes from "./components/Formalshoes.jsx";
+import Runningshoes from "./components/Runningshoes.jsx";
+import Footheels from "./components/Footheels.jsx";
+import Footwearwomen from "./components/Footwearwomen.jsx";
 import { CartProvider } from "./components/CartContext.js";
 
 
@@ -67,6 +71,10 @@ function App() {
             <Route path="/lipbalm" element={<Lipbalm />} />
             <Route path="/perfume" element={<Perfume />} />
             <Route path="/shampoo" element={<Shampoo />} />
+            <Route path="/formalshoes" element={<Formalshoes />} />
+            <Route path="/runningshoes" element={<Runningshoes />} />
+            <Route path="/footheels" element={<Footheels />} />
+            <Route path="/footwearwomen" element={<Footwearwomen />} />
           </Routes>
         </div>
       </Router>

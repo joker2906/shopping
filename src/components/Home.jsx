@@ -19,6 +19,10 @@ import sunscreen from './sunscreen.jpg';
 import lipbalm from './lipbalm.jpg';
 import perfume from './perfume.jpg';
 import shampoo from './shampoo.jpg';
+import fromalshoes from './fromalshoes.jpg';
+import runningshoes from './runningshoes.jpg';
+import footheels from './footheels.jpg';
+import footwearwomens from './footwearwomens.jpg';
 import './Home.css';
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
 import { useCart } from './CartContext';
@@ -98,7 +102,7 @@ export default function Home() {
             <div className="menu-item" onClick={() => { scrollToSection('womens-section'); setIsMenuOpen(false); }}>Women</div>
             <div className="menu-item" onClick={() => { scrollToSection('kids-section'); setIsMenuOpen(false); }}>Kids</div>
             <div className="menu-item" onClick={() => { scrollToSection('beauty-section'); setIsMenuOpen(false); }}>Beauty</div>
-            <div className="menu-item" onClick={() => { scrollToSection('kids-section'); setIsMenuOpen(false); }}>footware</div>
+            <div className="menu-item" onClick={() => { scrollToSection('footwear-section'); setIsMenuOpen(false); }}>Footwear</div>
             <span className="menu-item" onClick={() => navigate('/')}>Logout</span>
           </div>
           {isMenuOpen && <div className="overlay" onClick={() => setIsMenuOpen(false)}></div>}
@@ -217,6 +221,32 @@ export default function Home() {
               <img src={shampoo} alt="Shampoo" className="product-image" />
               <h3 className="product-title">Shampoo</h3>
               <p className="product-price">₹349.99</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="footwear-section" className="footwear-section">
+          <h2 className="section-title">Footwear</h2>
+          <div className="product-grid">
+            <div className="product-card" onClick={() => navigate('/formalshoes')}>
+              <img src={fromalshoes} alt="Formal Shoes" className="product-image" />
+              <h3 className="product-title">Formal Shoes</h3>
+              <p className="product-price">₹799.99</p>
+            </div>
+            <div className="product-card" onClick={() => navigate('/runningshoes')}>
+              <img src={runningshoes} alt="Running Shoes" className="product-image" />
+              <h3 className="product-title">Running Shoes</h3>
+              <p className="product-price">₹599.99</p>
+            </div>
+            <div className="product-card" onClick={() => navigate('/footheels')}>
+              <img src={footheels} alt="High Heels" className="product-image" />
+              <h3 className="product-title">High Heels</h3>
+              <p className="product-price">₹699.99</p>
+            </div>
+            <div className="product-card" onClick={() => navigate('/footwearwomen')}>
+              <img src={footwearwomens} alt="Women's Footwear" className="product-image" />
+              <h3 className="product-title">Women's Footwear</h3>
+              <p className="product-price">₹499.99</p>
             </div>
           </div>
         </section>
