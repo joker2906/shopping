@@ -7,6 +7,7 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const styles = {
     container: {
@@ -190,7 +191,10 @@ function Login() {
       alert("🔑 Password must be greater than 8 characters.");
       return;
     }
-    navigate("/home");
+    setShowSuccessMessage(true);
+    setTimeout(() => {
+      navigate("/home");
+    }, 3000);
   };
 
   const handleSignUp = () => {
@@ -223,6 +227,25 @@ function Login() {
             <div style={styles.title}>Welcome Back</div>
             <div style={styles.underline}></div>
           </div>
+          {showSuccessMessage && (
+            <div style={{
+              position: "fixed",
+              top: "20px",
+              right: "20px",
+              color: "#ffd700",
+              fontSize: "1.2rem",
+              fontWeight: "bold",
+              textAlign: "center",
+              padding: "10px 20px",
+              background: "rgba(0, 0, 0, 0.8)",
+              borderRadius: "10px",
+              boxShadow: "0 4px 15px rgba(255, 215, 0, 0.3)",
+              textShadow: "0 0 20px rgba(255, 215, 0, 0.8)",
+              zIndex: 1000
+            }}>
+              Login successful!
+            </div>
+          )}
           <form onSubmit={handleLogin}>
             <input
               type="email"

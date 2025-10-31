@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from './CartContext';
 import './Checkout.css';
+import Razorpay from 'razorpay';
 
 const Checkout = () => {
   const navigate = useNavigate();
@@ -27,6 +28,8 @@ const Checkout = () => {
       alert('Please fill in all shipping details');
       return;
     }
+    // Store shipping details in localStorage for the payment page
+    localStorage.setItem('shippingDetails', JSON.stringify(shippingDetails));
     navigate('/payment');
   };
 

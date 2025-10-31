@@ -23,8 +23,7 @@ import Childdress from "./components/Childdress.jsx";
 import Kidswear from "./components/Kidswear.jsx";
 import Childboywear from "./components/Childboywear.jsx";
 import Checkout from "./components/Checkout.jsx";
-import Payment from "./components/Payment.jsx";
-import OrderHistory from "./components/OrderHistory.jsx";
+import RazorpayPayment from "./components/RazorpayPayment.jsx";
 import Sunscreen from "./components/Sunscreen.jsx";
 import Lipbalm from "./components/Lipbalm.jsx";
 import Perfume from "./components/Perfume.jsx";
@@ -65,8 +64,7 @@ function App() {
             <Route path="/kidswear" element={<Kidswear />} />
             <Route path="/childboywear" element={<Childboywear />} />
             <Route path="/checkout" element={<Checkout />} />
-            <Route path="/payment" element={<Payment />} />
-            <Route path="/orders" element={<OrderHistory />} />
+            <Route path="/payment" element={<RazorpayPayment />} />
             <Route path="/sunscreen" element={<Sunscreen />} />
             <Route path="/lipbalm" element={<Lipbalm />} />
             <Route path="/perfume" element={<Perfume />} />

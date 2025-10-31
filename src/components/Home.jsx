@@ -225,7 +225,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="footwear-section" className="footwear-section">
+        <section id="footwear-section" className="kids-section">
           <h2 className="section-title">Footwear</h2>
           <div className="product-grid">
             <div className="product-card" onClick={() => navigate('/formalshoes')}>
