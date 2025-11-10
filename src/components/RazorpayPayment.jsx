@@ -25,7 +25,7 @@ const RazorpayPayment = () => {
     if (shippingDetails) {
       // Razorpay integration
       const options = {
-        key: 'rzp_test_Ra1DZZ9t1TWTUw', // Test API Key
+        key: 'rzp_test_RdIr5FCpDvJh4v', // Test API Key
         amount: total * 100, // Amount in paisa (multiply by 100 for rupees)
         currency: 'INR',
         name: 'RowdyWear',
